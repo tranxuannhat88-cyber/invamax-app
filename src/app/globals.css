@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-inter);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* INVAMAX BRAND COLORS */
+  --brand-dark-950: #111A15;
+  --brand-dark-900: #18231E;
+  --brand-dark-850: #19201F;
+  --brand-dark-800: #202725;
+  --brand-dark-700: #303937;
+
+  --brand-orange: #F47A20;
+  --brand-orange-hover: #DC6815;
+  --brand-orange-soft: #FFF2E8;
+  --brand-orange-border: #F8C9A8;
+
+  --surface-app: #F5F6F6;
+  --surface-secondary: #F8F9F9;
+  --surface-card: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+
+  --border-default: #E3E6E5;
+  --border-strong: #D1D6D4;
+
+  --text-primary: #17201E;
+  --text-secondary: #5F6966;
+  --text-muted: #828A87;
+  --text-on-dark: #F7F8F8;
+  --text-on-dark-secondary: #B7BFBC;
+
+  --status-success: #2E7D5A;
+  --status-success-soft: #EAF5F0;
+  --status-warning: #C98A1A;
+  --status-warning-soft: #FFF6E3;
+  --status-danger: #C94949;
+  --status-danger-soft: #FCECEC;
+  --status-info: #4978A8;
+  --status-info-soft: #EDF4FA;
+
+  /* MAPPING SHADCN VARS TO INVAMAX LIGHT/WORK THEME */
+  --background: var(--surface-app);
+  --foreground: var(--text-primary);
+  --card: var(--surface-card);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface-card);
+  --popover-foreground: var(--text-primary);
+  
+  --primary: var(--brand-orange);
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: var(--surface-secondary);
+  --secondary-foreground: var(--text-primary);
+  
+  --muted: var(--surface-secondary);
+  --muted-foreground: var(--text-muted);
+  
+  --accent: var(--brand-orange-soft);
+  --accent-foreground: var(--brand-orange);
+  
+  --destructive: var(--status-danger);
+  
+  --border: var(--border-default);
+  --input: var(--border-default);
+  --ring: var(--brand-orange);
+  
+  --radius: 0.5rem; /* 8px as requested */
+  
+  --sidebar: var(--brand-dark-900);
+  --sidebar-foreground: var(--text-on-dark);
+  --sidebar-primary: var(--brand-orange);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: rgba(255,255,255,0.06);
+  --sidebar-accent-foreground: var(--text-on-dark);
+  --sidebar-border: var(--brand-dark-800);
+  --sidebar-ring: var(--brand-orange);
+}
+
+.dark {
+  /* MAPPING SHADCN VARS TO INVAMAX DARK/PUBLIC THEME */
+  --background: var(--brand-dark-900); /* #18231E */
+  --foreground: var(--text-on-dark);
+  --card: rgba(255, 255, 255, 0.02); /* Match invamax.com card bg */
+  --card-foreground: var(--text-on-dark);
+  --popover: var(--brand-dark-950); /* #111A15 */
+  --popover-foreground: var(--text-on-dark);
+  
+  --primary: var(--brand-orange);
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: var(--brand-dark-950); /* #111A15 for secondary sections */
+  --secondary-foreground: var(--text-on-dark);
+  
+  --muted: var(--brand-dark-850);
+  --muted-foreground: var(--text-on-dark-secondary);
+  
+  --accent: rgba(244,122,32,0.12);
+  --accent-foreground: #FFFFFF;
+  
+  --destructive: var(--status-danger);
+  
+  --border: rgba(255,255,255,0.08); /* Match invamax.com card border */
+  --input: rgba(255,255,255,0.15);
+  --ring: var(--brand-orange);
+  
+  --sidebar: var(--brand-dark-950);
+  --sidebar-foreground: var(--text-on-dark);
+  --sidebar-primary: var(--brand-orange);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: rgba(255,255,255,0.06);
+  --sidebar-accent-foreground: var(--text-on-dark);
+  --sidebar-border: rgba(255,255,255,0.1);
+  --sidebar-ring: var(--brand-orange);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
