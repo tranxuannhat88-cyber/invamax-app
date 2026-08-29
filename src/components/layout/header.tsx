@@ -33,30 +33,53 @@ export function Header() {
 
         {/* Right Actions */}
         <div className="flex items-center space-x-4">
-          {/* Language Switcher */}
-          <div className="flex items-center text-xs font-bold text-muted-foreground bg-secondary rounded-full p-1 cursor-pointer">
-            <div 
-              onClick={() => setLocale("en")} 
-              className={`px-3 py-1.5 rounded-full transition-all ${locale === 'en' ? 'bg-primary text-primary-foreground shadow-sm' : 'hover:text-foreground'}`}
-            >
-              EN
-            </div>
-            <div 
-              onClick={() => setLocale("vi")} 
-              className={`px-3 py-1.5 rounded-full transition-all ${locale === 'vi' ? 'bg-primary text-primary-foreground shadow-sm' : 'hover:text-foreground'}`}
-            >
-              VI
-            </div>
-          </div>
-
           <Link href="/login" className="hidden md:inline-flex text-sm font-semibold text-muted-foreground hover:text-foreground">
             {t.nav.signIn}
           </Link>
           <Link href="/assessment">
-            <Button className="rounded-full px-6 font-bold shadow-md">
+            <Button className="bg-primary hover:bg-[#DC6815] text-primary-foreground rounded-full px-5 h-10 text-sm font-bold shadow-md shadow-primary/20 transition-transform active:scale-95">
               {t.nav.startAssessment}
             </Button>
           </Link>
+
+          {/* Language Switcher (Tiếng Việt / English with Flags) */}
+          <div className="flex items-center gap-2.5 text-xs font-semibold border border-white/10 rounded-full px-3 py-1.5 bg-black/20 backdrop-blur-sm shrink-0">
+            <button
+              onClick={() => setLocale("vi")}
+              className={`flex items-center gap-1.5 transition-all cursor-pointer ${
+                locale === 'vi' 
+                  ? 'text-primary font-bold opacity-100' 
+                  : 'text-muted-foreground opacity-70 hover:opacity-100 hover:text-foreground'
+              }`}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" 
+                alt="VN" 
+                className="w-4 h-2.5 rounded-[2px] object-cover shadow-sm"
+              />
+              <span>Tiếng Việt</span>
+            </button>
+            
+            <span className="text-white/20 select-none">/</span>
+
+            <button
+              onClick={() => setLocale("en")}
+              className={`flex items-center gap-1.5 transition-all cursor-pointer ${
+                locale === 'en' 
+                  ? 'text-primary font-bold opacity-100' 
+                  : 'text-muted-foreground opacity-70 hover:opacity-100 hover:text-foreground'
+              }`}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" 
+                alt="EN" 
+                className="w-4 h-2.5 rounded-[2px] object-cover shadow-sm"
+              />
+              <span>English</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
