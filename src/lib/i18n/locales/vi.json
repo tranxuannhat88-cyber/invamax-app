@@ -23,8 +23,9 @@
     "title": "Hai phương pháp đánh giá năng lực nhà máy",
     "subtitle": "Một mô hình năng lực nhà máy.\nHai phương pháp đánh giá.",
     "internal": {
-      "title": "Đánh giá Năng lực Nhà máy – Nội bộ",
-      "subtitle": "Hiểu rõ nhà máy.\nXây dựng năng lực mạnh hơn.",
+      "title": "Đánh giá Năng lực Nhà máy –",
+      "highlight": "Nội bộ",
+      "subtitle": "Hiểu rõ nhà máy. Xây dựng năng lực mạnh hơn.",
       "desc": "Dành cho doanh nghiệp sản xuất muốn tự đánh giá năng lực vận hành, xác định khoảng cách và lựa chọn các ưu tiên cải tiến.",
       "suitableFor": "Phù hợp với:",
       "targets": ["Chủ doanh nghiệp", "CEO / COO", "Giám đốc nhà máy", "Đội ngũ vận hành", "Đội ngũ cải tiến"],
@@ -34,8 +35,9 @@
       "cta": "Bắt đầu FCA Internal"
     },
     "external": {
-      "title": "Đánh giá Năng lực Nhà máy – Bên ngoài",
-      "subtitle": "Kiểm chứng năng lực.\nGiảm rủi ro nhà cung cấp.",
+      "title": "Đánh giá Năng lực Nhà máy –",
+      "highlight": "Bên ngoài",
+      "subtitle": "Kiểm chứng năng lực. Giảm rủi ro nhà cung cấp.",
       "desc": "Dành cho tổ chức cần đánh giá độc lập và kiểm chứng năng lực của nhà cung cấp, đối tác sản xuất hoặc các nhà máy khác.",
       "suitableFor": "Phù hợp với:",
       "targets": ["Mua hàng", "Quản lý chất lượng nhà cung cấp", "Chuỗi cung ứng", "Đơn vị mua hàng OEM / ODM", "Tập đoàn sản xuất", "Nhà đầu tư / Đội ngũ thẩm định"],

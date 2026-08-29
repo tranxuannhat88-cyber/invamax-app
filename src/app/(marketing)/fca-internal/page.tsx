@@ -12,8 +12,10 @@ export default function FCAInternalPage() {
     <div className="min-h-[80vh] bg-background flex flex-col items-center justify-center py-20 px-4">
       <div className="max-w-3xl text-center">
         <div className="text-primary font-black text-sm tracking-widest uppercase mb-6">FCA Internal</div>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">{t.methods.internal.title}</h1>
-        <p className="text-xl text-muted-foreground whitespace-pre-line mb-12 leading-relaxed max-w-2xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
+          {t.methods.internal.title} <span className="text-primary">{t.methods.internal.highlight}</span>
+        </h1>
+        <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto">
           {t.methods.internal.subtitle}
         </p>
         

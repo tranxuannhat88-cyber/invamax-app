@@ -23,8 +23,9 @@
     "title": "Two Ways to Assess Factory Capability",
     "subtitle": "One Factory Capability Model.\nTwo Assessment Methods.",
     "internal": {
-      "title": "Factory Capability Assessment – Internal",
-      "subtitle": "Understand your factory.\nBuild stronger capabilities.",
+      "title": "Factory Capability Assessment –",
+      "highlight": "Internal",
+      "subtitle": "Understand your factory. Build stronger capabilities.",
       "desc": "Designed for manufacturers that want to assess their own operating capabilities, identify gaps and prioritize improvement.",
       "suitableFor": "Suitable for:",
       "targets": ["Factory Owners", "CEO / COO", "Factory Directors", "Operations Teams", "Continuous Improvement Teams"],
@@ -34,8 +35,9 @@
       "cta": "Start FCA Internal"
     },
     "external": {
-      "title": "Factory Capability Assessment – External",
-      "subtitle": "Verify capability.\nReduce factory risk.",
+      "title": "Factory Capability Assessment –",
+      "highlight": "External",
+      "subtitle": "Verify capability. Reduce factory risk.",
       "desc": "Designed for organizations that need to independently assess and verify suppliers, manufacturing partners or other factories.",
       "suitableFor": "Suitable for:",
       "targets": ["Procurement", "Supplier Quality", "Supply Chain", "OEM / ODM Buyers", "Manufacturing Groups", "Investors / Due Diligence Teams"],

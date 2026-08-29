@@ -122,8 +122,12 @@ export default function PlatformHomePage() {
             {/* INTERNAL CARD */}
             <div className="bg-card rounded-2xl p-8 md:p-12 border border-border shadow-md flex flex-col transition-transform hover:-translate-y-1">
               <div className="text-primary font-black text-xs tracking-widest uppercase mb-4">FCA Internal</div>
-              <h3 className="text-2xl font-bold text-card-foreground mb-2">{t.methods.internal.title}</h3>
-              <p className="text-muted-foreground font-medium whitespace-pre-line mb-8 leading-relaxed">{t.methods.internal.subtitle}</p>
+              <h3 className="text-2xl font-bold text-card-foreground mb-3">
+                {t.methods.internal.title} <span className="text-primary font-extrabold">{t.methods.internal.highlight}</span>
+              </h3>
+              <p className="text-muted-foreground font-medium text-sm text-center mb-8 py-2 px-3 bg-secondary/60 rounded-lg border border-border/50">
+                {t.methods.internal.subtitle}
+              </p>
               <p className="text-muted-foreground mb-8 text-sm">{t.methods.internal.desc}</p>
               
               <div className="mb-8 flex-1">
@@ -161,8 +165,12 @@ export default function PlatformHomePage() {
                 <Search className="w-32 h-32 opacity-20" />
               </div>
               <div className="text-primary font-black text-xs tracking-widest uppercase mb-4 relative z-10">FCA External</div>
-              <h3 className="text-2xl font-bold text-card-foreground mb-2 relative z-10">{t.methods.external.title}</h3>
-              <p className="text-muted-foreground font-medium whitespace-pre-line mb-8 leading-relaxed relative z-10">{t.methods.external.subtitle}</p>
+              <h3 className="text-2xl font-bold text-card-foreground mb-3 relative z-10">
+                {t.methods.external.title} <span className="text-primary font-extrabold">{t.methods.external.highlight}</span>
+              </h3>
+              <p className="text-muted-foreground font-medium text-sm text-center mb-8 py-2 px-3 bg-secondary/60 rounded-lg border border-border/50 relative z-10">
+                {t.methods.external.subtitle}
+              </p>
               <p className="text-muted-foreground mb-8 text-sm relative z-10">{t.methods.external.desc}</p>
               
               <div className="mb-8 flex-1 relative z-10">

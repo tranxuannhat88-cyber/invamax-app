@@ -18,8 +18,10 @@ export default function FCAExternalPage() {
         <div className="inline-block bg-primary/10 text-primary font-black text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-8">
           {t.modules.comingSoon}
         </div>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">{t.methods.external.title}</h1>
-        <p className="text-xl text-muted-foreground whitespace-pre-line mb-12 leading-relaxed max-w-2xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
+          {t.methods.external.title} <span className="text-primary">{t.methods.external.highlight}</span>
+        </h1>
+        <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto">
           {t.methods.external.subtitle}
         </p>
         
