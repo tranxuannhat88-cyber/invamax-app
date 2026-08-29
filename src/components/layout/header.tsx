@@ -11,14 +11,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 transition-transform hover:scale-105">
-          <div className="text-xl md:text-2xl font-extrabold tracking-tight">
+        <Link href="/" className="flex flex-col justify-center transition-transform hover:scale-105 group py-1">
+          <div className="text-xl md:text-2xl font-extrabold tracking-tight leading-tight">
             <span className="text-foreground">INVA</span>
             <span className="text-primary">MAX</span>
             <span className="text-muted-foreground ml-1.5 font-bold tracking-normal">FA</span>
           </div>
-          <div className="hidden md:block w-[1px] h-5 bg-border mx-2"></div>
-          <span className="hidden lg:block text-xs font-semibold tracking-widest uppercase text-muted-foreground mt-1">
+          <span className="text-[9px] md:text-[10px] font-semibold tracking-wider uppercase text-muted-foreground mt-0.5 whitespace-nowrap">
             {t.nav.platform}
           </span>
         </Link>
