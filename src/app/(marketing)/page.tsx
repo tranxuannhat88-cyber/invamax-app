@@ -120,12 +120,12 @@ export default function PlatformHomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* INTERNAL CARD */}
-            <div className="bg-card rounded-2xl p-8 md:p-12 border border-border shadow-md flex flex-col transition-transform hover:-translate-y-1">
+            <div className="bg-card rounded-2xl p-6 sm:p-8 md:p-10 border border-border shadow-md flex flex-col transition-transform hover:-translate-y-1">
               <div className="text-primary font-black text-xs tracking-widest uppercase mb-4">FCA Internal</div>
-              <h3 className="text-2xl font-bold text-card-foreground mb-3">
+              <h3 className="text-lg sm:text-xl lg:text-[22px] font-bold text-card-foreground mb-3 tracking-tight whitespace-nowrap">
                 {t.methods.internal.title} <span className="text-primary font-extrabold">{t.methods.internal.highlight}</span>
               </h3>
-              <p className="text-muted-foreground font-medium text-sm text-center mb-8 py-2 px-3 bg-secondary/60 rounded-lg border border-border/50">
+              <p className="text-muted-foreground font-medium text-xs sm:text-sm text-center mb-8 py-2 px-3 bg-secondary/60 rounded-lg border border-border/50">
                 {t.methods.internal.subtitle}
               </p>
               <p className="text-muted-foreground mb-8 text-sm">{t.methods.internal.desc}</p>
@@ -160,15 +160,15 @@ export default function PlatformHomePage() {
             </div>
 
             {/* EXTERNAL CARD */}
-            <div className="bg-card rounded-2xl p-8 md:p-12 border border-border shadow-md flex flex-col transition-transform hover:-translate-y-1 relative overflow-hidden">
+            <div className="bg-card rounded-2xl p-6 sm:p-8 md:p-10 border border-border shadow-md flex flex-col transition-transform hover:-translate-y-1 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 text-secondary pointer-events-none">
                 <Search className="w-32 h-32 opacity-20" />
               </div>
               <div className="text-primary font-black text-xs tracking-widest uppercase mb-4 relative z-10">FCA External</div>
-              <h3 className="text-2xl font-bold text-card-foreground mb-3 relative z-10">
+              <h3 className="text-lg sm:text-xl lg:text-[22px] font-bold text-card-foreground mb-3 tracking-tight whitespace-nowrap relative z-10">
                 {t.methods.external.title} <span className="text-primary font-extrabold">{t.methods.external.highlight}</span>
               </h3>
-              <p className="text-muted-foreground font-medium text-sm text-center mb-8 py-2 px-3 bg-secondary/60 rounded-lg border border-border/50 relative z-10">
+              <p className="text-muted-foreground font-medium text-xs sm:text-sm text-center mb-8 py-2 px-3 bg-secondary/60 rounded-lg border border-border/50 relative z-10">
                 {t.methods.external.subtitle}
               </p>
               <p className="text-muted-foreground mb-8 text-sm relative z-10">{t.methods.external.desc}</p>
